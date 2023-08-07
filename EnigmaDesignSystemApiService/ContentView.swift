@@ -14,6 +14,10 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+        }.onAppear{
+            GetApiService<[FactModel]>(url: "\(BASE_URL)facts").fetch { dataState in
+                print("response : \(dataState)")
+            }
         }
         .padding()
     }

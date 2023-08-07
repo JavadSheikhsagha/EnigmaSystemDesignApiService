@@ -11,6 +11,13 @@
 		3F96469B2A81636E00893D69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96469A2A81636E00893D69 /* ContentView.swift */; };
 		3F96469D2A81636F00893D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F96469C2A81636F00893D69 /* Assets.xcassets */; };
 		3F9646A12A81636F00893D69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9646A02A81636F00893D69 /* Preview Assets.xcassets */; };
+		3F9646AD2A81658500893D69 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9646AC2A81658500893D69 /* Alamofire */; };
+		3F9646B12A81661100893D69 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9646B02A81661100893D69 /* ApiServices.swift */; };
+		3F9646B42A81666B00893D69 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9646B32A81666B00893D69 /* SwiftyJSON */; };
+		3F9646B92A81668100893D69 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9646B72A81668100893D69 /* Utils.swift */; };
+		3F9646BA2A81668100893D69 /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9646B52A81668100893D69 /* DataState.swift */; };
+		3F9646BB2A81668100893D69 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9646B62A81668100893D69 /* ErrorType.swift */; };
+		3F9646BC2A81668100893D69 /* MyDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9646B82A81668100893D69 /* MyDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,11 @@
 		3F96469C2A81636F00893D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F96469E2A81636F00893D69 /* EnigmaDesignSystemApiService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnigmaDesignSystemApiService.entitlements; sourceTree = "<group>"; };
 		3F9646A02A81636F00893D69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F9646B02A81661100893D69 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		3F9646B52A81668100893D69 /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		3F9646B62A81668100893D69 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		3F9646B72A81668100893D69 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3F9646B82A81668100893D69 /* MyDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9646B42A81666B00893D69 /* SwiftyJSON in Frameworks */,
+				3F9646AD2A81658500893D69 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3F9646982A81636E00893D69 /* EnigmaDesignSystemApiServiceApp.swift */,
+				3F9646BD2A81679B00893D69 /* ApiService */,
 				3F96469A2A81636E00893D69 /* ContentView.swift */,
 				3F96469C2A81636F00893D69 /* Assets.xcassets */,
 				3F96469E2A81636F00893D69 /* EnigmaDesignSystemApiService.entitlements */,
@@ -67,6 +82,18 @@
 				3F9646A02A81636F00893D69 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F9646BD2A81679B00893D69 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				3F9646B02A81661100893D69 /* ApiServices.swift */,
+				3F9646B52A81668100893D69 /* DataState.swift */,
+				3F9646B62A81668100893D69 /* ErrorType.swift */,
+				3F9646B82A81668100893D69 /* MyDecoder.swift */,
+				3F9646B72A81668100893D69 /* Utils.swift */,
+			);
+			path = ApiService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +112,10 @@
 			dependencies = (
 			);
 			name = EnigmaDesignSystemApiService;
+			packageProductDependencies = (
+				3F9646AC2A81658500893D69 /* Alamofire */,
+				3F9646B32A81666B00893D69 /* SwiftyJSON */,
+			);
 			productName = EnigmaDesignSystemApiService;
 			productReference = 3F9646952A81636E00893D69 /* EnigmaDesignSystemApiService.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +144,10 @@
 				Base,
 			);
 			mainGroup = 3F96468C2A81636E00893D69;
+			packageReferences = (
+				3F9646AB2A81658500893D69 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3F9646B22A81666B00893D69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 3F9646962A81636E00893D69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9646B12A81661100893D69 /* ApiServices.swift in Sources */,
 				3F96469B2A81636E00893D69 /* ContentView.swift in Sources */,
+				3F9646BA2A81668100893D69 /* DataState.swift in Sources */,
+				3F9646BC2A81668100893D69 /* MyDecoder.swift in Sources */,
 				3F9646992A81636E00893D69 /* EnigmaDesignSystemApiServiceApp.swift in Sources */,
+				3F9646BB2A81668100893D69 /* ErrorType.swift in Sources */,
+				3F9646B92A81668100893D69 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +309,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Enigma ApiService";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,8 +318,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -287,10 +328,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.a2mp.EnigmaDesignSystemApiService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,6 +350,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Enigma ApiService";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,8 +359,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -325,10 +369,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.a2mp.EnigmaDesignSystemApiService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -354,6 +400,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F9646AB2A81658500893D69 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.7.1;
+			};
+		};
+		3F9646B22A81666B00893D69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F9646AC2A81658500893D69 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F9646AB2A81658500893D69 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3F9646B32A81666B00893D69 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F9646B22A81666B00893D69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F96468D2A81636E00893D69 /* Project object */;
 }
